@@ -2,14 +2,15 @@
 	"name": "all-contributors-types",
 	"version": "0.1.0",
 	"description": "The contribution types supported by All Contributors, as data. 🔣",
+	"homepage": "https://allcontributors.org",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/JoshuaKGoldberg/all-contributors-types.git"
+		"url": "git+https://github.com/all-contributors/contribution-types.git"
 	},
 	"license": "MIT",
 	"author": {
-		"name": "Josh Goldberg",
-		"email": "git@joshuakgoldberg.com"
+		"name": "All Contributors",
+		"url": "https://allcontributors.org"
 	},
 	"sideEffects": false,
 	"type": "module",

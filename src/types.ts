@@ -10,12 +10,12 @@ export interface ContributionLinkOptions {
 	login?: string;
 
 	/**
-	 * Name of the repository, such as `"all-contributors-types"`.
+	 * Name of the repository, such as `"contribution-types"`.
 	 */
 	projectName: string;
 
 	/**
-	 * Owner of the repository, such as `"JoshuaKGoldberg"`.
+	 * Owner of the repository, such as `"all-contributors"`.
 	 */
 	projectOwner: string;
 
