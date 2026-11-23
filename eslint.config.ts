@@ -27,7 +27,6 @@ export default defineConfig(
       jsdoc.configs['flat/logical-typescript-error'],
       jsdoc.configs['flat/stylistic-typescript-error'],
       n.configs['flat/recommended'],
-      perfectionist.configs['recommended-natural'],
       regexp.configs['flat/recommended'],
       tseslint.configs.strictTypeChecked,
       tseslint.configs.stylisticTypeChecked,
@@ -38,12 +37,17 @@ export default defineConfig(
         projectService: { allowDefaultProject: ['*.config.*s'] },
       },
     },
+    plugins: { perfectionist },
     rules: {
       // Stylistic concerns that don't interfere with Oxfmt
       'logical-assignment-operators': ['error', 'always', { enforceForIfStatements: true }],
       'no-useless-rename': 'error',
       'object-shorthand': 'error',
       'operator-assignment': 'error',
+
+      'perfectionist/sort-exports': 'error',
+      'perfectionist/sort-named-exports': 'error',
+      'perfectionist/sort-named-imports': 'error',
     },
     settings: { perfectionist: { partitionByComment: true, type: 'natural' } },
   },
