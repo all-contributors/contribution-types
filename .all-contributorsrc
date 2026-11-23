@@ -28,6 +28,15 @@
         "tool",
         "ideas"
       ]
+    },
+    {
+      "login": "jimmadge",
+      "name": "Jim Madge",
+      "avatar_url": "https://avatars.githubusercontent.com/u/23616154?v=4",
+      "profile": "https://blog.jmadge.com",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
