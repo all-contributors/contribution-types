@@ -1,3 +1,10 @@
+name: Post Release
+
+on:
+  release:
+    types:
+      - published
+
 jobs:
   post_release:
     permissions:
@@ -17,14 +24,7 @@ jobs:
 
             The release is available on:
 
-            * [GitHub releases](https://github.com/JoshuaKGoldberg/all-contributors-types/releases/tag/{release_tag})
+            * [GitHub releases](https://github.com/all-contributors/contribution-types/releases/tag/{release_tag})
             * [npm package (@latest dist-tag)](https://www.npmjs.com/package/all-contributors-types/v/${{ env.npm_version }})
 
             Cheers! 📦🚀
-
-name: Post Release
-
-on:
-  release:
-    types:
-      - published

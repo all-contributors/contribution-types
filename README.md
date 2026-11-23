@@ -1,4 +1,4 @@
-<h1 align="center">All Contributors Types</h1>
+<h1 align="center">All Contributors: Contribution Types</h1>
 
 <p align="center">
 	The contribution types supported by All Contributors, as data.
@@ -11,11 +11,9 @@
 	<a href="#contributors" target="_blank"><img alt="👪 All Contributors: 2" src="https://img.shields.io/badge/%F0%9F%91%AA_all_contributors-2-21bb42.svg" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 	<!-- prettier-ignore-end -->
-	<a href="https://github.com/JoshuaKGoldberg/all-contributors-types/blob/main/.github/CODE_OF_CONDUCT.md" target="_blank"><img alt="🤝 Code of Conduct: Kept" src="https://img.shields.io/badge/%F0%9F%A4%9D_code_of_conduct-kept-21bb42" /></a>
-	<a href="https://codecov.io/gh/JoshuaKGoldberg/all-contributors-types" target="_blank"><img alt="🧪 Coverage" src="https://img.shields.io/codecov/c/github/JoshuaKGoldberg/all-contributors-types?label=%F0%9F%A7%AA%20coverage" /></a>
-	<a href="https://github.com/JoshuaKGoldberg/all-contributors-types/blob/main/LICENSE.md" target="_blank"><img alt="📝 License: MIT" src="https://img.shields.io/badge/%F0%9F%93%9D_license-MIT-21bb42.svg" /></a>
+	<a href="https://codecov.io/gh/all-contributors/contribution-types" target="_blank"><img alt="🧪 Coverage" src="https://img.shields.io/codecov/c/github/JoshuaKGoldberg/all-contributors-types?label=%F0%9F%A7%AA%20coverage" /></a>
+	<a href="https://github.com/all-contributors/contribution-types/blob/main/LICENSE.md" target="_blank"><img alt="📝 License: MIT" src="https://img.shields.io/badge/%F0%9F%93%9D_license-MIT-21bb42.svg" /></a>
 	<a href="http://npmjs.com/package/all-contributors-types" target="_blank"><img alt="📦 npm version" src="https://img.shields.io/npm/v/all-contributors-types?color=21bb42&label=%F0%9F%93%A6%20npm" /></a>
-	<img alt="💪 TypeScript: Strict" src="https://img.shields.io/badge/%F0%9F%92%AA_typescript-strict-21bb42.svg" />
 </p>
 
 ## Usage
@@ -36,10 +34,10 @@ contributionTypes.bug;
 
 createContributionLink("bug", {
 	login: "JoshuaKGoldberg",
-	projectName: "all-contributors-types",
-	projectOwner: "JoshuaKGoldberg",
+	projectName: "contribution-types",
+	projectOwner: "all-contributors",
 });
-// "https://github.com/JoshuaKGoldberg/all-contributors-types/issues?q=author%3AJoshuaKGoldberg"
+// "https://github.com/all-contributors/contribution-types/issues?q=author%3AJoshuaKGoldberg"
 
 isContributionTypeName("bug"); // true
 isContributionTypeName("other"); // false
@@ -104,5 +102,3 @@ Thanks! 🔣
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- spellchecker: enable -->
-
-> 💝 This package was templated with [`create-typescript-app`](https://github.com/JoshuaKGoldberg/create-typescript-app) using the [Bingo framework](https://create.bingo).
