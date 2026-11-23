@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 
 import { contributionTypes } from './contributionTypes.ts';
 import { createContributionLink } from './createContributionLink.ts';
-import { RepoType } from './types.ts';
+import type { RepoType } from './types.ts';
 
 const login = 'contributor';
 const projectName = 'example-repository';

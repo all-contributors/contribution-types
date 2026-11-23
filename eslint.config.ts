@@ -39,7 +39,10 @@ export default defineConfig(
     },
     plugins: { perfectionist },
     rules: {
-      // Stylistic concerns that don't interfere with Oxfmt
+      '@typescript-eslint/consistent-type-exports': 'error',
+      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/explicit-module-boundary-types': 'error',
+
       'logical-assignment-operators': ['error', 'always', { enforceForIfStatements: true }],
       'no-useless-rename': 'error',
       'object-shorthand': 'error',

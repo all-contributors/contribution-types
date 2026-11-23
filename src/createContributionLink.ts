@@ -1,10 +1,5 @@
 import { type ContributionTypeName, contributionTypes } from './contributionTypes.ts';
-import type {
-  ContributionLinkKind,
-  ContributionLinkOptions,
-  ContributionType,
-  RepoType,
-} from './types.ts';
+import type { ContributionLinkKind, ContributionType, RepoType } from './types.ts';
 
 const defaultHosts: Record<RepoType, string> = {
   github: 'https://github.com',
@@ -26,14 +21,41 @@ const linkPaths: Record<RepoType, Record<ContributionLinkKind, (login: string) =
   },
 };
 
+export interface ContributionLinkOptions {
+  /**
+   * Username of the contributor, if known.
+   */
+  login?: string;
+
+  /**
+   * Name of the repository, such as `"contribution-types"`.
+   */
+  projectName: string;
+
+  /**
+   * Owner of the repository, such as `"all-contributors"`.
+   */
+  projectOwner: string;
+
+  /**
+   * Base URL of the repository host, if not the default for `repoType`.
+   */
+  repoHost?: string;
+
+  /**
+   * Which repository host to create links for.
+   */
+  repoType?: RepoType;
+}
+
 /**
  * Creates the URL that a contributor's contribution links to in a README table.
  * Contribution types without a repository page link to a `#type-login` anchor.
  */
-export function createContributionLink(
+export const createContributionLink = (
   contribution: ContributionTypeName,
   options: ContributionLinkOptions,
-) {
+): string => {
   const { login, projectName, projectOwner, repoType = 'github' } = options;
   const type: ContributionType = contributionTypes[contribution];
 
@@ -44,4 +66,4 @@ export function createContributionLink(
   const repoHost = options.repoHost ?? defaultHosts[repoType];
 
   return `${repoHost}/${projectOwner}/${projectName}/${linkPaths[repoType][type.link](login)}`;
-}
+};

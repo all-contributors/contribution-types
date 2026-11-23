@@ -3,6 +3,6 @@ import { type ContributionTypeName, contributionTypes } from './contributionType
 /**
  * Checks whether a string is the name of a known contribution type.
  */
-export function isContributionTypeName(value: string): value is ContributionTypeName {
+export const isContributionTypeName = (value: string): value is ContributionTypeName => {
   return Object.hasOwn(contributionTypes, value);
-}
+};
