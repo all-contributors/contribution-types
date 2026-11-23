@@ -1,71 +1,69 @@
 {
-	"name": "all-contributors-types",
-	"version": "0.1.0",
-	"description": "The contribution types supported by All Contributors, as data. 🔣",
-	"homepage": "https://allcontributors.org",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/all-contributors/contribution-types.git"
-	},
-	"license": "MIT",
-	"author": {
-		"name": "All Contributors",
-		"url": "https://allcontributors.org"
-	},
-	"sideEffects": false,
-	"type": "module",
-	"exports": {
-		".": "./dist/index.mjs"
-	},
-	"files": [
-		"dist/"
-	],
-	"scripts": {
-		"build": "tsdown",
-		"format": "prettier .",
-		"lint": "eslint . --max-warnings 0",
-		"lint:spelling": "cspell \"**\" \".github/**/*\"",
-		"prepare": "husky",
-		"test": "vitest"
-	},
-	"lint-staged": {
-		"*": "prettier --ignore-unknown --write"
-	},
-	"devDependencies": {
-		"@eslint-community/eslint-plugin-eslint-comments": "4.8.1",
-		"@eslint/js": "10.0.1",
-		"@eslint/markdown": "9.0.0",
-		"@types/node": "26.6.6",
-		"@vitest/coverage-v8": "5.1.0",
-		"@vitest/eslint-plugin": "1.6.28",
-		"all-contributors-cli": "6.26.1",
-		"console-fail-test": "0.10.0",
-		"cspell": "10.5.2",
-		"eslint": "10.15.0",
-		"eslint-plugin-jsdoc": "65.5.1",
-		"eslint-plugin-jsonc": "3.4.2",
-		"eslint-plugin-markdown-links": "0.9.1",
-		"eslint-plugin-n": "18.5.0",
-		"eslint-plugin-package-json": "1.14.0",
-		"eslint-plugin-perfectionist": "5.14.0",
-		"eslint-plugin-regexp": "3.3.3",
-		"eslint-plugin-yml": "3.10.0",
-		"husky": "9.1.7",
-		"knip": "6.47.0",
-		"lint-staged": "17.6.1",
-		"prettier": "3.10.1",
-		"prettier-plugin-curly": "0.4.2",
-		"prettier-plugin-packagejson": "3.1.0",
-		"prettier-plugin-padding-lines": "0.1.0",
-		"prettier-plugin-sentences-per-line": "0.2.5",
-		"prettier-plugin-sh": "0.20.2",
-		"tsdown": "0.23.7",
-		"typescript": "5.9.3",
-		"typescript-eslint": "8.73.0",
-		"vitest": "5.1.0"
-	},
-	"packageManager": "pnpm@12.21.0",
-	"engines": {
-		"node": "^22.13.0 || ^24.11.0 || >=26.0.0"
-	}
+  "name": "all-contributors-types",
+  "version": "0.1.0",
+  "description": "The contribution types supported by All Contributors, as data. 🔣",
+  "homepage": "https://allcontributors.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/all-contributors/contribution-types.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "All Contributors",
+    "url": "https://allcontributors.org"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "format": "oxfmt",
+    "lint": "eslint . --max-warnings 0",
+    "lint:spelling": "cspell \"**\" \".github/**/*\"",
+    "prepare": "simple-git-hooks",
+    "test": "vitest"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "oxfmt --no-error-on-unmatched-pattern"
+  },
+  "devDependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "4.8.1",
+    "@eslint/js": "10.0.1",
+    "@eslint/markdown": "9.0.0",
+    "@types/node": "26.6.6",
+    "@vitest/coverage-v8": "5.1.0",
+    "@vitest/eslint-plugin": "1.6.28",
+    "all-contributors-cli": "6.26.1",
+    "console-fail-test": "0.10.0",
+    "cspell": "10.5.2",
+    "eslint": "10.15.0",
+    "eslint-plugin-jsdoc": "65.5.1",
+    "eslint-plugin-jsonc": "3.4.2",
+    "eslint-plugin-markdown-links": "0.9.1",
+    "eslint-plugin-n": "18.5.0",
+    "eslint-plugin-package-json": "1.14.0",
+    "eslint-plugin-perfectionist": "5.14.0",
+    "eslint-plugin-regexp": "3.3.3",
+    "eslint-plugin-yml": "3.10.0",
+    "knip": "6.47.0",
+    "lint-staged": "17.6.1",
+    "oxfmt": "^0.79.0",
+    "simple-git-hooks": "^2.14.0",
+    "tsdown": "0.23.7",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.73.0",
+    "vitest": "5.1.0"
+  },
+  "packageManager": "pnpm@12.21.0",
+  "engines": {
+    "node": "^22.13.0 || ^24.11.0 || >=26.0.0"
+  }
 }

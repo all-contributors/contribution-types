@@ -1,10 +1,10 @@
 name: 🛠 Tooling
-title: "🛠 Tooling: <short description of the change>"
+title: '🛠 Tooling: <short description of the change>'
 description: Report a bug or request an enhancement in repository tooling
 
 labels:
-  - "area: tooling"
-  - "status: in discussion"
+  - 'area: tooling'
+  - 'status: in discussion'
 
 body:
   - attributes:
