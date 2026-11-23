@@ -254,8 +254,8 @@ importers:
         specifier: 0.1.0
         version: 0.1.0(prettier@3.10.1)
       prettier-plugin-sentences-per-line:
-        specifier: 0.2.4
-        version: 0.2.4(prettier@3.10.1)
+        specifier: 0.2.5
+        version: 0.2.5(prettier@3.10.1)
       prettier-plugin-sh:
         specifier: 0.20.0
         version: 0.20.0(prettier@3.10.1)
@@ -2956,8 +2956,8 @@ packages:
     peerDependencies:
       prettier: ^3
 
-  prettier-plugin-sentences-per-line@0.2.4:
-    resolution: {integrity: sha512-1SSPJxwvekA6wVb4VqJYcVZw39Ak7Oy/IKd4qCGG48hO7oWg/DF0EWPo4PrEROy2LWLl3/U570NM7SurMKQNSA==}
+  prettier-plugin-sentences-per-line@0.2.5:
+    resolution: {integrity: sha512-vvUaFbXexU1eV1EjER5Dmb9sTnBiLrtomKQpMya50MorB5Ab2ANQrt43f1wv1ZY5zDT/OhD43fxOw9Yehai+mw==}
     peerDependencies:
       prettier: ^3
 
@@ -6373,7 +6373,7 @@ snapshots:
     dependencies:
       prettier: 3.10.1
 
-  prettier-plugin-sentences-per-line@0.2.4(prettier@3.10.1):
+  prettier-plugin-sentences-per-line@0.2.5(prettier@3.10.1):
     dependencies:
       prettier: 3.10.1
       sentences-per-line: 0.5.6
