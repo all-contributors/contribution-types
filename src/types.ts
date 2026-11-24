@@ -1,54 +1,54 @@
 /**
  * Which kind of repository page a contribution type links to, if any.
  */
-export type ContributionLinkKind = "commits" | "issues" | "reviews";
+export type ContributionLinkKind = 'commits' | 'issues' | 'reviews';
 
 export interface ContributionLinkOptions {
-	/**
-	 * Username of the contributor, if known.
-	 */
-	login?: string;
+  /**
+   * Username of the contributor, if known.
+   */
+  login?: string;
 
-	/**
-	 * Name of the repository, such as `"contribution-types"`.
-	 */
-	projectName: string;
+  /**
+   * Name of the repository, such as `"contribution-types"`.
+   */
+  projectName: string;
 
-	/**
-	 * Owner of the repository, such as `"all-contributors"`.
-	 */
-	projectOwner: string;
+  /**
+   * Owner of the repository, such as `"all-contributors"`.
+   */
+  projectOwner: string;
 
-	/**
-	 * Base URL of the repository host, if not the default for `repoType`.
-	 */
-	repoHost?: string;
+  /**
+   * Base URL of the repository host, if not the default for `repoType`.
+   */
+  repoHost?: string;
 
-	/**
-	 * Which repository host to create links for.
-	 * @default "github"
-	 */
-	repoType?: RepoType;
+  /**
+   * Which repository host to create links for.
+   * @default "github"
+   */
+  repoType?: RepoType;
 }
 
 export interface ContributionType {
-	/**
-	 * Human-readable description, such as `"Bug reports"`.
-	 */
-	description: string;
+  /**
+   * Human-readable description, such as `"Bug reports"`.
+   */
+  description: string;
 
-	/**
-	 * Which kind of repository page the contribution type links to, if any.
-	 */
-	link?: ContributionLinkKind;
+  /**
+   * Which kind of repository page the contribution type links to, if any.
+   */
+  link?: ContributionLinkKind;
 
-	/**
-	 * Emoji representing the contribution type, such as `"🐛"`.
-	 */
-	symbol: string;
+  /**
+   * Emoji representing the contribution type, such as `"🐛"`.
+   */
+  symbol: string;
 }
 
 /**
  * Repository hosts supported by All Contributors.
  */
-export type RepoType = "github" | "gitlab";
+export type RepoType = 'github' | 'gitlab';
