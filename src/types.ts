@@ -3,34 +3,6 @@
  */
 export type ContributionLinkKind = 'commits' | 'issues' | 'reviews';
 
-export interface ContributionLinkOptions {
-  /**
-   * Username of the contributor, if known.
-   */
-  login?: string;
-
-  /**
-   * Name of the repository, such as `"contribution-types"`.
-   */
-  projectName: string;
-
-  /**
-   * Owner of the repository, such as `"all-contributors"`.
-   */
-  projectOwner: string;
-
-  /**
-   * Base URL of the repository host, if not the default for `repoType`.
-   */
-  repoHost?: string;
-
-  /**
-   * Which repository host to create links for.
-   * @default "github"
-   */
-  repoType?: RepoType;
-}
-
 export interface ContributionType {
   /**
    * Human-readable description, such as `"Bug reports"`.
