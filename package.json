@@ -35,13 +35,13 @@
     "*": "oxfmt --no-error-on-unmatched-pattern"
   },
   "devDependencies": {
+    "@all-contributors/cli": "7.0.3",
     "@eslint-community/eslint-plugin-eslint-comments": "4.8.1",
     "@eslint/js": "10.0.1",
     "@eslint/markdown": "9.0.0",
     "@types/node": "26.6.6",
     "@vitest/coverage-v8": "5.1.1",
     "@vitest/eslint-plugin": "1.6.28",
-    "all-contributors-cli": "7.0.3",
     "console-fail-test": "0.10.0",
     "cspell": "10.5.2",
     "eslint": "10.15.0",

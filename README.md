@@ -43,7 +43,7 @@ isContributionTypeName('bug'); // true
 isContributionTypeName('other'); // false
 ```
 
-The data and links are kept in sync with [`all-contributors-cli`](https://github.com/all-contributors/cli)'s [emoji key](https://allcontributors.org/docs/en/emoji-key).
+The data and links are kept in sync with [`@all-contributors/cli`](https://github.com/all-contributors/cli)'s [emoji key](https://allcontributors.org/docs/en/emoji-key).
 
 ### `contributionTypes`
 

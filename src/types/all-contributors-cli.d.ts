@@ -1,4 +1,4 @@
-declare module 'all-contributors-cli/dist/util/contribution-types.js' {
+declare module '@all-contributors/cli/dist/util/contribution-types.js' {
   interface UpstreamContributionType {
     description: string;
     link?: string;
