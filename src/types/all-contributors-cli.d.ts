@@ -5,7 +5,7 @@ declare module 'all-contributors-cli/dist/util/contribution-types.js' {
     symbol: string;
   }
 
-  export default function createContributionTypes(options: {
+  export function contributionTypes(options: {
     repoType: string;
   }): Record<string, UpstreamContributionType>;
 }
