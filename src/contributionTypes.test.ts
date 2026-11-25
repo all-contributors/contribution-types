@@ -1,4 +1,4 @@
-import { contributionTypes as upstreamContributionTypes } from 'all-contributors-cli/dist/util/contribution-types.js';
+import { contributionTypes as upstreamContributionTypes } from '@all-contributors/cli/dist/util/contribution-types.js';
 import { describe, expect, it } from 'vitest';
 
 import { contributionTypes } from './contributionTypes.ts';
@@ -23,11 +23,11 @@ function renderUpstreamLink(link: string, repoType: RepoType) {
 describe.each(['github', 'gitlab'] as const)('%s', (repoType) => {
   const upstream = upstreamContributionTypes({ repoType });
 
-  it('has the same contribution types as all-contributors-cli', () => {
+  it('has the same contribution types as @all-contributors/cli', () => {
     expect(Object.keys(contributionTypes).sort()).toEqual(Object.keys(upstream).sort());
   });
 
-  it.each(Object.keys(upstream))('matches all-contributors-cli for %s', (name) => {
+  it.each(Object.keys(upstream))('matches @all-contributors/cli for %s', (name) => {
     const expected = upstream[name];
     const actual = contributionTypes[name as keyof typeof contributionTypes];
 

@@ -185,6 +185,9 @@ importers:
 
   .:
     devDependencies:
+      '@all-contributors/cli':
+        specifier: 7.0.3
+        version: 7.0.3(@types/node@26.6.6)
       '@eslint-community/eslint-plugin-eslint-comments':
         specifier: 4.8.1
         version: 4.8.1(eslint@10.15.0(jiti@2.7.0)(supports-color@7.2.0))
@@ -203,9 +206,6 @@ importers:
       '@vitest/eslint-plugin':
         specifier: 1.6.28
         version: 1.6.28(@typescript-eslint/eslint-plugin@8.73.0(@typescript-eslint/parser@8.73.0(eslint@10.15.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@10.15.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@10.15.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)(vitest@5.1.1)
-      all-contributors-cli:
-        specifier: 7.0.3
-        version: 7.0.3(@types/node@26.6.6)
       console-fail-test:
         specifier: 0.10.0
         version: 0.10.0
@@ -265,6 +265,11 @@ importers:
         version: 5.1.1(@types/node@26.6.6)(@vitest/coverage-v8@5.1.1)(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0)(yaml@2.9.1))
 
 packages:
+
+  '@all-contributors/cli@7.0.3':
+    resolution: {integrity: sha512-XqQ5g59n2oO3/z766pVzDxrMAtx/sO1iMENZcqzB9Mz2AMWh4n899JA+Douvl+UVEinVBWhBTuEIXGwK6Pb1SQ==}
+    engines: {node: '>=22.22.0'}
+    hasBin: true
 
   '@altano/repository-tools@2.1.3':
     resolution: {integrity: sha512-XziG37d1GILC6KDfGyormXDGXra8yGhJ5ux/QqhQZ0HtDrJ6pzxjVeZDtI1ikfnOMrPju5WkmnmRL4OujOVPLA==}
@@ -1597,11 +1602,6 @@ packages:
 
   ajv@6.15.0:
     resolution: {integrity: sha512-fgFx7Hfoq60ytK2c7DhnF8jIvzYgOMxfugjLOSMHjLIPgenqa7S7oaagATUq99mV6IYvN2tRmC0wnTYX6iPbMw==}
-
-  all-contributors-cli@7.0.3:
-    resolution: {integrity: sha512-zsKuzp+F5JUjy9IThlwYyQJuwFiReo0RRIlGVU7mdZfU/ZwsQHuov8PZGFOFfenitA7+qWoItARKp4CUu5NnVw==}
-    engines: {node: '>=22.22.0'}
-    hasBin: true
 
   ansi-regex@6.6.0:
     resolution: {integrity: sha512-XZ5apbzreCbXSKwPjJstu8R0zOi247w3XYwWxtwBXgpZrCyc1Ka7p9/xY0A9/diMewmHbEKz+FIraWaEWjlN5g==}
@@ -3073,6 +3073,18 @@ packages:
 
 snapshots:
 
+  '@all-contributors/cli@7.0.3(@types/node@26.6.6)':
+    dependencies:
+      eta: 4.6.0
+      inquirer: 14.3.1(@types/node@26.6.6)
+      json-fixer: 1.6.15
+      yargs: 18.2.0
+      yoctocolors: 2.2.0
+    optionalDependencies:
+      prettier: 3.10.1
+    transitivePeerDependencies:
+      - '@types/node'
+
   '@altano/repository-tools@2.1.3': {}
 
   '@babel/helper-string-parser@7.29.15': {}
@@ -4131,18 +4143,6 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
-
-  all-contributors-cli@7.0.3(@types/node@26.6.6):
-    dependencies:
-      eta: 4.6.0
-      inquirer: 14.3.1(@types/node@26.6.6)
-      json-fixer: 1.6.15
-      yargs: 18.2.0
-      yoctocolors: 2.2.0
-    optionalDependencies:
-      prettier: 3.10.1
-    transitivePeerDependencies:
-      - '@types/node'
 
   ansi-regex@6.6.0: {}
 
