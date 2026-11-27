@@ -2,6 +2,8 @@
   "compilerOptions": {
     "declaration": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
+    "isolatedDeclarations": true,
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "noEmit": true,

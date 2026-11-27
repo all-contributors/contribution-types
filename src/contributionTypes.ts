@@ -1,10 +1,45 @@
 import type { ContributionType } from './types.ts';
 
+export type ContributionTypeName =
+  | 'a11y'
+  | 'audio'
+  | 'blog'
+  | 'bug'
+  | 'business'
+  | 'code'
+  | 'content'
+  | 'data'
+  | 'design'
+  | 'doc'
+  | 'eventOrganizing'
+  | 'example'
+  | 'financial'
+  | 'fundingFinding'
+  | 'ideas'
+  | 'infra'
+  | 'maintenance'
+  | 'mentoring'
+  | 'platform'
+  | 'plugin'
+  | 'projectManagement'
+  | 'promotion'
+  | 'question'
+  | 'research'
+  | 'review'
+  | 'security'
+  | 'talk'
+  | 'test'
+  | 'tool'
+  | 'translation'
+  | 'tutorial'
+  | 'userTesting'
+  | 'video';
+
 /**
  * The contribution types supported by All Contributors, keyed by name.
  * @see https://allcontributors.org/docs/en/emoji-key
  */
-export const contributionTypes = {
+export const contributionTypes: Readonly<Record<ContributionTypeName, ContributionType>> = {
   a11y: {
     description: 'Accessibility',
     symbol: '️️️️♿️',
@@ -142,6 +177,4 @@ export const contributionTypes = {
     description: 'Videos',
     symbol: '📹',
   },
-} as const satisfies Record<string, ContributionType>;
-
-export type ContributionTypeName = keyof typeof contributionTypes;
+};
