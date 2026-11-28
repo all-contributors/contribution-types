@@ -8,5 +8,14 @@
     "node_modules",
     "pnpm-lock.yaml"
   ],
-  "words": ["apexskier", "autorelease", "blogposts", "eeef", "octoguide", "RELEASEBOT"]
+  "words": [
+    "apexskier",
+    "autorelease",
+    "blogposts",
+    "eeef",
+    "octoguide",
+    "RELEASEBOT",
+    "zizmorcore",
+    "zizmor"
+  ]
 }
